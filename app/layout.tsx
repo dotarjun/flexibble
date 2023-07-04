@@ -1,3 +1,7 @@
+import './globals.css'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
+
 export const metadata = {
   title: 'Flexibble',
   description: 'Showcase and discover the latest work from top online projects by creative professionals across industries.',
@@ -11,12 +15,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        NavBar
+        <Navbar />
         <main>
           {children}
         </main>
-        Footer
+        <Footer />
       </body>
-    </html>
+    </html >
   )
 }
