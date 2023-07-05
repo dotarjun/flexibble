@@ -11,14 +11,22 @@ type Provider = {
     signinUrlParams: Record<string, string> | null
 }
 
+type Providers = Record<string, Provider>
 
 const AuthProviders = () => {
     const [Providers, setProviders] = useState<Providers | null>(null)
 
-
-    return (
-        <div>AuthProviders</div>
-    )
+    if (Providers) {
+        return (
+            <div>
+                {Object.values(Providers)
+                    .map((provider: Provider, i) => (
+                        <button key={i}>{provider.id}</button>
+                    ))
+                }
+            </div>
+        )
+    }
 }
 
 export default AuthProviders
