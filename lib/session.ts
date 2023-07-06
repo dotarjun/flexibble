@@ -24,10 +24,16 @@ export const authOptions: NextAuthOptions = {
     },
     callbacks: {
         async session({ session }) {
-            
+            return session
         },
-        async signin({ user }) {
-            
+        async signin({ user }: { user: AdapterUser | User }) {
+            try {
+                
+                return true
+            } catch (error) {
+                console.log(error)
+                return false
+            }
         }
     }
 }
