@@ -27,7 +27,7 @@ export const authOptions: NextAuthOptions = {
         async session({ session }) {
             return session
         },
-        async signin({ user }: { user: AdapterUser | User }) {
+        async signIn({ user }: { user: AdapterUser | User }) {
             try {
                 
                 return true
@@ -41,4 +41,5 @@ export const authOptions: NextAuthOptions = {
 
 export async function getCurrentUser() { 
     const session = await getServerSession(authOptions) as SessionInterface
+    return session
 }
