@@ -1,10 +1,10 @@
 # Flexibble
 
-## Live Deployment: [Flexibble Live](https://example.com)
+## Live Deployment: [Flexibble Live](https://flexibble.arjunsingh.tech)
 
 ## Description
 
-This repository contains the source code for a Flexibble website. The project aims to replicate the functionality and design of the popular design showcase platform, Dribbble. It allows users to upload and share their design work, browse other designers' work, and interact with the community.
+This repository contains the source code for Flexibble. The project aims to replicate the functionality and design of the popular design showcase platform, Dribbble. It allows users to upload and share their design work, browse other designers' work, and interact with the community.
 
 ## Table of Contents
 
