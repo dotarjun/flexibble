@@ -6,9 +6,9 @@ import { useState, useEffect } from "react";
 type Provider = {
   id: string;
   name: string;
-  signInUrl: string;
+  signinUrl: string;
   callbackUrl: string;
-  signinUrlParams: Record<string, string> | null;
+  signinUrlParams?: Record<string, string> | null;
 };
 
 type Providers = Record<string, Provider>;
