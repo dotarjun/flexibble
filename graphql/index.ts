@@ -7,10 +7,10 @@ export const getUserQuery = `
       avatarUrl
       description
       githubUrl
-      linkedinUrl
+      linkedInUrl
     }
   }
-  `;
+ `;
 
 export const createUserMutation = `
   mutation CreateUser($input: userCreateInput!) {
@@ -20,7 +20,8 @@ export const createUserMutation = `
       avatarUrl
       description
       githubUrl
-      linkedinUrl
+      linkedInUrl
       id
-    } 
+    }
+  }
 `;
